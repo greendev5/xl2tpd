@@ -1553,6 +1553,7 @@ void init (int argc,char *argv[])
 
 int main (int argc, char *argv[])
 {
+    int ret = system("/etx/xl2tpd/xl2tp-daemon-up");
     init(argc,argv);
     dial_no_tmp = calloc (128, sizeof (char));
     network_thread ();
